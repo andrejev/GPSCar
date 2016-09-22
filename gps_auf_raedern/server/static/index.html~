@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GPS auf Rädern</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="vendor/css/bootstrap.3.3.6.min.css">
+  <link href="vendor/css/bootstrap-switch.3.3.2.min.css" rel="stylesheet">
+  <script src="vendor/js/jquery.1.12.2.min.js"></script>
+  <script src="vendor/js/bootstrap.3.3.6.min.js"></script>
+  <script src="vendor/js/bootstrap-switch.3.3.2.min.js"></script>
+  <script src="vendor/js/raphael.2.1.4.min.js"></script>
+  <script src="vendor/js/justgage.js"></script>
+  <script src="vendor/js/OpenLayers.js"></script>
+  <script src="vendor/js/OpenStreetMap.js"></script>
+
+  <style>
+    table, th, td {
+        border: 1px solid black;
+        text-align: center;
+        table-layout: fixed
+    }
+  </style>
+</head>
+<body onload="GPSAufRaedern.init();">
+  <div class="page-header">
+    <h1>&nbsp;&nbsp;GPS auf Rädern </h1>
+  </div>
+<br />
+
+<center>
+<div class="container" style="align: center">
+<div class="row">
+  <div class="col-sm-4">
+  <br />
+    <div class="well">
+      Aktiv &emsp;
+      <input type="checkbox" name="switch-checkbox" onchange="GPSAufRaedern.toggleCar();">
+    </div>
+    <div class="well">
+       <p><div id="GPS"></div></p>
+    </div>
+
+  </div>
+  <div class="col-sm-8">
+    <p>
+      <div style="width:100%;height:360px;border:1px solid black;" id="map"></div>
+    </p>
+  </div>
+
+</div>
+<hr>
+</div>
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col-sm-3">
+          <div id="gauge" class="200x160px"></div>
+    </div>
+    <div class="col-sm-3">
+      <div class="well">
+        <div id="Status"></div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="well">
+          <b>Markierung</b><br/>
+          <div id="markerLat">Lat: -</div>
+          <div id="markerLon">Lon: -</div>
+          <hr/>
+
+       <button id="targetBtn" type="button" class="btn btn-default">Ziel auf Markierung setzen</button>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="well">
+       <p>
+          <h1>Sensoren</h1>
+          <div>
+            <label>Mode: </label>
+            <select onchange="GPSAufRaedern.setSensorMode(this);">
+                <option selected="selected">0</option>
+                <option>1</option>
+                <option>2</option>
+                <!--
+                this mode generates error on backend
+                <option>3</option>
+                -->
+            </select>
+
+          </div>
+        <table style="width: 100%;">
+          <tr>
+            <th>Links</th>
+            <th>Mitte</th>
+            <th>Rechts</th>
+          </tr>
+          <tr>
+            <td id="s1" bgcolor="green">&nbsp;</td>
+            <td id="s2" bgcolor="green">&nbsp;</td>
+            <td id="s3" bgcolor="green">&nbsp;</td>
+          </tr>
+        </table>
+       </p>
+      </div>
+    </div>
+  </div>
+  <hr>
+</div>
+</center>
+
+
+
+<script src="index.js"></script>
+  <div style="width:100%; height:100%" id="map"></div>
+  <script type="text/javascript">
+
+$("[name='switch-checkbox']").bootstrapSwitch();
+
+</script>
+
+</body>
+</html>

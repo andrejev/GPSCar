@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <title>GPS-Car</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='assets/css/font.css' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
+	<link rel="stylesheet" href="assets/plugins/lightbox/dist/ekko-lightbox.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="body-green">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <i class="icon fa fa-car"></i> GPS-Car</h1>
+                        </a>
+                    </h1>
+                </div><!--//branding-->
+            </div><!--//container-->
+        </header><!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><i class="icon fa fa-file-text"></i><span class="text-highlight"> Dokumentation</span>
+                </div><!--//doc-header-->
+                <div class="doc-body">
+                    <div class="doc-content">
+                        <div class="content-inner">
+                            <section id="general-section" class="doc-section">
+                                <h2 class="section-title">Allgemeine Informationen</h2>
+                                <div class="section-block">
+                                    <p>
+                                      <b>Bearbeitungszeitraum</b>: 01.04.2016 - 30.09.2016<br/><br/>
+                                      <b>Team</b>: <br/>
+                                      <img src="assets/img/banner.PNG"></img>
+                                      <br/><br/>
+                                      <table class="table">
+                                          <tdead>
+                                              <tr>
+                                                  <td>Vorname</td>
+                                                  <td>Nachname</td>
+                                                  <td>Studienfach</td>
+                                              </tr>
+                                          </thead>
+                                          <tbody>
+                                              <tr>
+                                                  <td>Pavel</td>
+                                                  <td>Andrejev</td>
+                                                  <td>M.Sc. Angewandte Informatik</td>
+                                              </tr>
+                                              <tr>
+                                                  <td>Philipp</td>
+                                                  <td>Rettig</td>
+                                                  <td>M.Sc. Angewandte Informatik</td>
+                                              </tr>
+                                              <tr>
+                                                  <td>Richard</td>
+                                                  <td>Schönpflug</td>
+                                                  <td>M.Sc. Angewandte Informatik</td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                    </p> <br/>
+                                    <b>Betreuer</b>: Gero Plettenberg <br/>
+                                    <b>Supervisor</b>: Thomas Kloepfer <br/><br/><br/>
+                                    <b>Aufgabenstellung</b>: <br/>
+                                    Es existieren bereits Lösungen zum Projekt “GPS auf Rädern” aus vorangegangenen Semestern.
+                                    Diese entwickelten zwei Modellautos, welche autonom mit Hilfe von GPS-Daten und Ultraschallsensoren
+                                    zu einem festgelegten Zielpunkt fahren und dabei Hindernissen ausweichen können. Ziel dieses
+                                    Fortgeschrittenenpraktikums ist die Weiterentwicklung der bestehenden Lösungen,
+                                    indem Komponenten kombiniert, erweitert, oder ausgetauscht werden,
+                                    sodass ein robustes, schnell einsatzfähiges Fahrzeug entsteht. Die Benutzung und
+                                    Kontrolle des Fahrzeugs soll trivial und selbsterklärend sein.
+                                </div>
+                              </section>
+                            </section><!--//doc-section-->
+                            <section id="ergebnis-section" class="doc-section">
+                              <h2 class="section-title">Ergebnis</h2>
+                              <div class="section-block">
+                                Das Endergebnis unseres Projekts ist eine Erweiterung des Modell A des GPS-Car von 2014. Zahlreiche Verbesserungen an Hard- und Software wurden vorgenommen.
+								Diese umfassen unter anderem: <br/><br/>
+								- Weboberfläche zur Auswahl des Ziels und Starten der Navigation (ausführliche Beschreibung unter Milestone 2) <br/>
+								- Debug Möglichkeiten durch zahlreiche Ausgaben auf der Weboberfläche <br/>
+								- Korrektes Threading im Code<br/>
+								- Strukturierung des Codes in sinnvollere Klassen<br/>
+								- Anpassen der Kompass Kalibrierung<br/>
+								- Robustere Gesamtkonstruktion<br/>
+								- Dokumentation aller Veränderungen und detaillierte Anweisungen zukünftige Verbesserungen<br/>
+								- Eine leicht verständliche Anleitung für die Inbetriebnahme wurde erstellt, die sich im Punkt <a class="scrollto" href="#inbetriebnahme-section">"Anleitung zur Inbetriebnahme"</a></li> finden lässt.<br/><br/>
+								
+								<table>
+									<tr>
+										<td class="ui-helper-center"><a href="assets/img/finished1.jpg" data-toggle="lightbox" data-gallery="ergebnis" data-title="Das Fahrzeug am Ende des Praktikums" target="_blank"><img style="width:80%" src="assets/img/finished1.jpg"></a></td>
+										<td class="ui-helper-center"><a href="assets/img/finished2.jpg" data-toggle="lightbox" data-gallery="ergebnis" data-title="Draufsicht auf das Fahrzeug" target="_blank"><img style="width:80%" src="assets/img/finished2.jpg"></a></td>
+									</tr>
+									<tr>
+										<td class="ui-helper-center">Das Fahrzeug am Ende des Praktikums</td>
+										<td class="ui-helper-center">Draufsicht auf das Fahrzeug</td>
+									</tr>
+								</table>
+								
+								
+                              </div>
+                            </section>
+                            <section id="verlauf-section" class="doc-section">
+                              <h2 class="section-title">Projektverlauf</h2>
+                              <div class="section-block">
+                                Unser Projekt lief vom 01.04.2016 bis zum 30.9.2016 und wurde von Anfang an mit diversen Milestones geplant.<br/>
+								<h4>Milestone 1 (27.06.2016): Evaluierung der Autos und Client/Server Architektur</h3><br/>
+								Für den ersten Milestone war zunächst die Evaluierung beider Modellautos geplant. Hierbei wurden Hardware- und Softwareaspekte berücksichtigt.
+								Modell B hatte eine etwas vielversprechendere Code Basis, wurde jedoch durch den Umzug des Robotiklabors ins Mathematikon
+								physikalisch stark in Mitleidenschaft gezogen. Modell A hingegen war in einem beinahe fahrbereiten Zustand, weswegen wir es als Basis für unsere
+								Anpassungen auswählten. Desweiteren besitzt es einen dritten Ultraschallsensor zur verbesserten Navigation.<br/>
+								Als weiterer Punkt waren Testfahrten geplant, welche auch unternommen wurden. Hierbei wurden erste Testdaten zur Pfadfindung, Bedienbarkeit und GPS Genauigkeit erhoben.<br/><br/>
+								Anschließend implementierten wir zuerst eine Client/Server Struktur um Informationen vom Fahrzeug leichter auszutauschen und zu visualisieren. Hierdurch wurde das Debugging bereits vereinfacht und beschleunigt.<br/><br/>
+
+								<h4>Milestone 2 (18.07.2016): Erweiterung der Client/Server Struktur und Untersuchung der Sensoren</h3><br/>
+								Der erste Unterpunkt unseres zweiten Milestones war die Erweiterung der Client/Server Struktur um die Initialisierung des Fahrzeugs zu erleichtern. Hierfür wurden alle nötigen
+								Startroutinen des Fahrzeugs über die Weboberfläche zugänglich gemacht und der Server für diese in den Autostart des Raspberrys gelegt. Dadurch erleichterte sich die Inbetriebnahme bereits enorm.
+								Somit muss nun nach der Herstellung der Stromversorgung kein Zugriff per SSH erfolgen um die Navigation zu starten. Stattdessen genügt es, sich mit dem vom Fahrzeug aufgebauten WLAN zu verbinden und die Weboberfläche im
+								Browser aufzurufen. Hier kann nun auch das Ziel der Navigation bequem auf einer Karte ausgewählt werden. Zuvor war die Anpassung der Zielkoordinaten mit aufwändigen Anpassungen am Programmcode verbunden, da diese "hardcoded" waren.<br/><br/>
+								
+								Außerdem war für diesen Milestone geplant, das Auto auf zwei Sensoren zurückzubauen, um die Zielführung ohne den beweglichen dritten Sensor zu testen. Nach dem Studium des Programmcodes fiel uns hier allerdings auf, dass die verwendete
+								Bibliothek für die Navigation ausschließlich auf dem dritten Sensor basierte. Wenn der linke oder rechte Sensor ein Hindernis erkennen, wird der mittlere Sensor geschwenkt und sucht nach einer Lücke in passender Größe um diese anzusteuern.
+								Wir änderten hier unseren Plan und verbesserten die Ansteuerung des Servos der für die Schwenks verantwortlich ist, da dieser ab und an zu Ausfällen neigte. <br/><br/>
+								
+								<table>
+									<tr>
+										<td class="ui-helper-center"><a href="assets/img/ultraschallsensoren.jpg" data-toggle="lightbox" data-gallery="verlauf" data-title="Die drei Ultraschallsensoren" target="_blank"><img style="width:80%" src="assets/img/ultraschallsensoren.jpg"></a></td>
+										<td class="ui-helper-center"><a href="assets/img/web.png" data-toggle="lightbox" data-gallery="verlauf" data-title="Weboberfläche zur Steuerung mit Echtzeitinformationen" target="_blank"><img style="width:80%" src="assets/img/web.png"></a></td>
+										<td class="ui-helper-center"><a href="assets/img/web_mobil.jpg" data-toggle="lightbox" data-gallery="verlauf" data-title="Weboberfläche auf einem Smartphone" target="_blank"><img style="width:80%" src="assets/img/web_mobil_prev.jpg"></a></td>
+									</tr>
+									<tr>
+										<td class="ui-helper-center">Die drei Ultraschallsensoren</td>
+										<td class="ui-helper-center">Weboberfläche zur Steuerung mit Echtzeitinformationen</td>
+										<td class="ui-helper-center">Weboberfläche auf einem Smartphone</td>
+									</tr>
+								</table>
+								
+								<br/><br/>
+								
+								Auf dem Screenshot der Weboberfläche sind alle Funktionalitäten zu sehen. Auf der Karte ist die aktuelle Position des Autos markiert. Die Karte im Bereich des Neuenheimer Feld ist offline auf dem Raspberry verfügbar. Durch Klicken lässt sich ein Ziel auswählen, dessen Koordinaten unten bei angezeigt werden. Durch einen Klick auf
+								"Ziel auf Markierung setzen", wird dieser Marker als aktuelle Zielposition eingetragen. Durch einen weiteren Klick auf den "Aktiv" Switch beginnt das Auto die automatische Ansteuerung des Ziels. Zusätzlich lassen sich auf der linken Seite zahlreiche Informationen
+								zu den aktuellen GPS Daten ablesen. Unterhalb der Karte ist ebenfalls der aktuelle Status der Fahrzeugsteuerung und der gewünschte Status angezeigt. Dieser gibt zum Beispiel die Fahrtrichtung "vorwärts" aus. Desweiteren lässt sich der aktuelle Status der Sensoren auslesen.
+								Ist kein Hindernis in Sicht, erscheinen diese Grün. Bei einem eventuellen Hindernis gelb. Ist mit Sicherheit ein Hindernis im Weg, wird die Statusanzeige rot. Wenn einer der beiden Sensoren links oder rechts ein Ziel erkannt hat, wird der mittlere Sensor ausgelesen um einen
+								Weg um das Hindernis herum zu ermitteln. Jederzeit wird für jeden Sensor der Abstand zum nächsten Hindernis angezeigt. Die komplette Weboberfläche ist responsive aufgebaut und kann somit von beliebigen Endgeräten wie Smartphones bequem benutzt werden. In der rechten oberen Ecke befindet
+								sich zudem ein Fragezeichen Button, mit dem diese Dokumentation geöffnet werden kann.<br/><br/>
+
+								<h4>Milestone 3 (15.08.2016): Verlagern des GPS/Kompass Moduls</h3><br/>
+								Unser dritter Milestone beschäftigte sich mit dem Verlagern des kombinierten GPS/Kompass Moduls, welches vom Auto zur Bestimmung des Standorts und Orientierung benutzt wird. Dieses befand sich im ursprünglichen Zustand des Autos auf einem 35cm hohen Stab, um es gegen mögliche Störstrahlung von Motor und Prozessoren abzuschirmen. 
+								
+								<br/><br/>
+								
+								<table>
+									<tr>
+										<td class="ui-helper-center"><a href="assets/img/gps_stab.jpg" data-toggle="lightbox" data-gallery="stab" data-title="Modul auf Stab" target="_blank"><img style="width:50%" src="assets/img/gps_stab.jpg"></a></td>
+										<td class="ui-helper-center"><a href="assets/img/gps_heck.jpg" data-toggle="lightbox" data-gallery="stab" data-title="Modul im Heck" target="_blank"><img style="width:50%" src="assets/img/gps_heck.jpg"></a></td>
+									</tr>
+									<tr>
+										<td class="ui-helper-center">Modul auf Stab</td>
+										<td class="ui-helper-center">Modul im Heck</td>
+									</tr>
+								</table>
+								
+								<br/><br/>
+								
+								Unsere ersten Ideen waren es, das Modul gegen elektrische Felder abzuschirmen, oder eine externe Antenne zu verwenden. Wir führten zunächst Messungen der GPS Genauigkeit in der ursprünglichen Position durch und brachten das Modul
+								dann provisorisch auf der Halterung des Heckspoilers an. Nach der Durchführung einer weiteren Reihe an Messungen stellten wir fest, dass diese Distanz scheinbar ausreichend war um eine Störung des GPS durch andere Komponenten auszuschließen.
+										
+								<br/><br/>
+										
+								<table>
+									<tr>
+										<td style="padding-right:10px"><a href="assets/img/dr1.PNG" data-toggle="lightbox" data-gallery="stats" data-title="Modul auf Stab, mean: 8.5906m" target="_blank"><img style="width:100%" src="assets/img/dr1.PNG"></a></td>
+										<td                           ><a href="assets/img/dr2.PNG" data-toggle="lightbox" data-gallery="stats" data-title="Modul im Heck, mean: 8.8642m" target="_blank"><img style="width:100%" src="assets/img/dr2.PNG"></a></td>
+										<td style="padding-left:10px" ><a href="assets/img/dr3.PNG" data-toggle="lightbox" data-gallery="stats" data-title="Modul + WLAN im Heck, mean: 8.6812m" target="_blank"><img style="width:100%" src="assets/img/dr3.PNG"></a></td>
+									</tr>
+									<tr>
+										<td class="ui-helper-center">Modul auf Stab, mean: 8.5906m</td>
+										<td class="ui-helper-center">Modul im Heck, mean: 8.8642m</td>
+										<td class="ui-helper-center">Modul + WLAN im Heck, mean: 8.6812m</td>
+									</tr>
+								</table>
+								
+								<br/><br/>
+								
+								Später bemerkten wir bei der Evaluierung des Kompass jedoch, dass dieser durch die Spule des Motors gestört wird. Statt des vollen Spektrums von 0 bis 360 Grad gab dieser nur Werte in einem Bereich von 20 bis 40 zurück und schwankte dabei stark.
+								Da es sehr schwierig ist, magnetische Felder abzuschirmen, waren wir gezwungen das Modul wieder auf den Stab zu verlagern. <br/><br/>
+								
+								Der Ansatz der externen Antenne verfiel nach einiger Recherche, da das GPS Modul bereits über eine Antenne verfügt. Diese ist allerdings bei GPS Modulen nicht in Form einer Stabantenne möglich, sondern ist in Form einer rechteckigen Fläche.
+								Oberhalb der eigentlichen Platine befindet sich die rechteckige, etwa 2cm² große Keramikplatte, welche die Antenne beherbergt. Diese ist eine der größten und genauesten Ausführungen die im Modellbaubereich erhältlich ist. <br/><br/>
+								
+								Unsere letzte Idee zur Erhöhung der GPS Präzision bestand darin, das WLAN Modul in die Front des Fahrzeugs zu verlegen. Nachdem eine weitere Reihe Tests keine messbaren Unterschiede hervorbrachte, verlegten wir das GPS Modul zu Testzwecken direkt neben
+								das GPS Modul. Auch hier sahen wir keine nennenswerten Schwankungen in der Genauigkeit, weswegen wir das WLAN Modul wieder an seinen ursprünglichen Platz direkt im Raspberry verlegten und es als Störquelle ausschließen konnten. <br/><br/>
+								
+								Die erreichte Genauigkeit in den verschiedenen Konfigurationen lässt sich an den unten aufgeführten Plots ablesen. Sie liegt im Mittel bei ca. 8,5 Metern. Dies ist ausreichend für eine ungefähre Navigation in Richtung Ziel.
+								Es wäre sinnvoll hier in einem weiterführenden Projekt anzusetzen, um die Standortbestimmung zu verbessern. Mehr dazu unter <a class="scrollto" href="#ausblick-section">Ausblick</a>.
+								
+								Ein <a class="scrollto" href="#medien-section">Schaltplan zum Anschluss des GPS Moduls</a> befindet sich unter Medien.
+
+								<br/><br/>
+								
+								<h4>Milestone 4 (23.09.2016): Verbesserungen an Hardware, Kabelmanagement und Dokumentation</h3><br/>
+								Unser erweiterter vierter Milestone beinhaltete das gesamte Kabelmanagement und generelle Verbesserungen am Aufbau der Hardware. Dazu zählen zum Beispiel eine Lasche um die Batteriepacks zu sichern,
+								sowie die Fixierung des Stabes, welche das GPS Modul trägt. Weiterhin wurden der Spannungswandler und das Akkupack, welche das Raspberry versorgten, durch eine USB Powerbank ersetzt.
+								Dies hat mehrere Vorteile: Zum einen lassen sich nun der Akku für die Motoren und die Powerbank für das Raspberry gleichzeitig laden, zum anderen stellten wir teilweise starke Hitzeentwicklung am Spannungswandler fest, welche trotz
+								eines Heatspreaders weiterhin auftraten fest. Diese führten teilweise zu einem Absturz des Raspberrys, wenn der Servor des mitleren Sensors bewegt wurde. Wir vermuteten als Problem zu starke Spannungsschwankungen durch die bisherige Akkulösung.
+								Nach dem Einsatz der Powerbank stellten wir keine weiteren Ausfälle mehr fest. Weiteres hierzu im <a class="scrollto" href="#ausblick-section">Ausblick</a>. <br/><br/>
+								Weiterhin wurden während dieser Zeit auch die komplette Homepage mit der Projektdokumentation erstellt, finale Anpassungen an der Software durchgeführt und die Abschlusspräsentation vorbereitet. Diese befindet sich ebenfalls in der Sektion Medien.<br/><br/>
+								
+								<table>
+									<tr>
+										<td style="padding-right:10px"><a href="assets/img/robustness1.jpg" data-toggle="lightbox" data-gallery="robustnesspics" data-title="Kabelbinder am Stab" target="_blank"><img style="width:100%" src="assets/img/robustness1.jpg"></a></td>
+										<td style="padding-right:10px"><a href="assets/img/robustness2.jpg" data-toggle="lightbox" data-gallery="robustnesspics" data-title="Starke Fixierung des Stabs" target="_blank"><img style="width:100%" src="assets/img/robustness2.jpg"></a></td>
+										<td style="padding-right:10px"><a href="assets/img/robustness3.jpg" data-toggle="lightbox" data-gallery="robustnesspics" data-title="Noch mehr Kabelbinder" target="_blank"><img style="width:100%" src="assets/img/robustness3.jpg"></a></td>
+										<td style="padding-right:10px"><a href="assets/img/robustness4.jpg" data-toggle="lightbox" data-gallery="robustnesspics" data-title="Fest verlegte Kabel zu den Sensoren" target="_blank"><img style="width:100%" src="assets/img/robustness4.jpg"></a></td>
+									</tr>
+								</table>
+								
+                              </div>
+                            </section>
+                            <section id="inbetriebnahme-section" class="doc-section">
+                              <h2 class="section-title">Anleitung zur Inbetriebnahme</h2>
+							  <div class="section-block">
+							  
+							  <table>
+									<tr>
+										<td style="width:100px; padding-right:10px;"><a href="assets/img/akku1.jpg" data-toggle="lightbox" data-gallery="anleitung" data-title="1) Akku für Motoren anschließen" target="_blank"><img style="width:100%" src="assets/img/akku1.jpg"></a></td>
+										<td> 1) Akku für Motoren anschließen</td>
+									</tr>
+									
+									<tr class="separator" />
+									
+									<tr>
+										<td style="width:100px; padding-right:10px;"><a href="assets/img/akku2.jpg" data-toggle="lightbox" data-gallery="anleitung" data-title="2) Powerbank / Akku an Raspberry anschließen" target="_blank"><img style="width:100%" src="assets/img/akku2.jpg"></a></td>
+										<td> 2) Powerbank / Akku an Raspberry anschließen</td>
+									</tr>
+									
+									<tr class="separator" />
+									
+									<tr>
+										<td style="width:100px; padding-right:10px;"><a href="assets/img/switch.jpg" data-toggle="lightbox" data-gallery="anleitung" data-title="3) Sicherstellen, dass Unterbrechungsschalter für Motor auf "On" steht" target="_blank"><img style="width:100%" src="assets/img/switch.jpg"></a></td>
+										<td> 3) Sicherstellen, dass Unterbrechungsschalter für Motor auf "On" steht</td>
+									</tr>
+									
+									<tr class="separator" />
+									
+									<tr>
+										<td style="width:100px; padding-right:10px;"><a href="assets/img/wlan.png" data-toggle="lightbox" data-gallery="anleitung" data-title="4) Verbinden mit dem WLAN "GPS_Robotic" (pw: gps_robotic14)" target="_blank"><img style="width:100%" src="assets/img/wlan.png"></a></td>
+										<td> 4) Verbinden mit dem WLAN "GPS_Robotic" (pw: gps_robotic14)</td>
+									</tr>
+									
+									<tr class="separator" />
+									
+									<tr>
+										<td style="width:100px; padding-right:10px;"><a href="assets/img/web_marked.png" data-toggle="lightbox" data-gallery="anleitung" data-title="5) Aufrufen der Seite 192.168.0.1:8080 im Browser und Einstellugen vornehmen" target="_blank"><img style="width:100%" src="assets/img/web_marked.png"></a></td>
+										<td> 5) Aufrufen der Seite 192.168.0.1:8080 im Browser<br/>
+											 6) Ziel auf Karte auswählen<br/>
+											 7) Button "Ziel auf Markierung setzen" drücken<br/>
+											 8) Auf "On" klicken </td>
+									</tr>
+								</table>
+								
+                              </div>
+                            </section>
+                            <section id="probleme-section" class="doc-section">
+                              <h2 class="section-title">Aufgetretene Probleme und Nützliches</h2>
+                              <div class="section-block">
+                                Durch die geringe Menge an Dokumentation traten viele Schwierigkeiten beim Einstieg in das Projekt auf. Um diese in Zukunft zu vermeiden, listen wir hier detailliert sämtliche aufgetretenen Probleme auf:<br/><br/>
+								
+								- Ausrichtung des GPS Moduls: Der Code wurde entsprechend angepasst, sodass das Modul nun mit Pfeilrichtung in Fahrtrichtung ausgerichtet werden muss. <br/><br/>
+								- Anschluss des GPS Moduls: Die Kanäle RX und TX müssen vom GPS Modul über Kreuz an die entsprechenden GPIO Pins angeschlossen werden. Siehe <a class="scrollto" href="#medien-section">Schaltplan</a>. <br/><br/>
+								- Verbinden mit dem WLAN "GPS_Robotic" des Fahrzeugs: Passwort: "gps_robotic14", die IP Adresse des Raspberrys bei bestehender WLAN Verbindung lautet "192.168.0.1". <br/><br/>
+								- Benutzername und Passworts des Raspberrys sind: User: "pi", Passwort: "raspberry". <br/><br/>
+								- Um Änderungen am Code zu erleichtern, kann das Raspberry unter Linux als Laufwerk gemountet werden. Hierfür genügt der Befehl "sshfs pi@<IP>:/ ~/raspi/". <br/><br/>
+								- Falls das Raspberry per LAN an einem der Labor Rechner angeschlossen wird, erhält es eine andere Netzwerk IP. Diese kann mit dem Befehl "ip n | grep b8:27:eb" gefunden werden. <br/><br/>		
+								- Unebener Untergrund sorgt für Schwierigkeiten bei der Navigation und bringen das Fahrzeug leicht vom Kurs ab. Ein glatter und wagrechter Boden ist zum Testen wichtig.
+                              </div>
+                            </section>
+                            <section id="ausblick-section" class="doc-section">
+                              <h2 class="section-title">Ausblick</h2>
+                              <div class="section-block">
+								Das wichtigste Ziel um eine genauere Zielführung zu erreichen, ist die Verbesserung der GPS Genauigkeit. Die momentane Genauigkeit von ca. 8,5 Metern reicht zwar aus um zum Ziel zu navigieren, jedoch kommt es immer wieder zu relative
+								starken Abweichung während der Route. Eine Möglichkeit wäre die in <a href="http://qrios.de/2010/12/2cm-gps-genauigkeit-fur-alle/">diesem Blogeintrag</a> beschriebene Methode, welches mithilfe eines Differenzsignals einer festen Basis die Genauigkeit stark verbessern kann. <br/><br/>
+                                
+								In der Endphase unseres Projekts zogen wir in Erwägung, den mittleren Ultraschallsensor durch einen Infrarotsensor zu ersetzen. Dieser gibt den Abstand zu einem Objekt durch eine Output Spannung direkt wieder. Es muss nicht wie beim Ultraschallsensor gemessen 
+								werden in welcher Zeit das Signal zurückgekommen ist. Außerdem ist die Messung des IR Sensors eigenständig und permanent. Für den Anschluss wird ein Analog to Digital Wandler benötigt. Ein solcher liegt GPS Projekt A bei.<br/><br/>
+								
+								Es wäre sinnvoll die Stromversorgung der Servos und Sensoren nicht über das Raspberry laufen zu lassen, da dieses dann bei inkonsistenter Stromversorgung durch die Überbeanspruchung abstürzen kann. Der Spannungswandler der dem Auto beiliegt kann modifiziert werden,
+								sodass er den Strom vom sekundären Akku auf Raspberry und Sensoren/Servos aufteilt.<br/><br/>	
+								
+								Wir halten es für sinnvoll eine Lösung mit Stereokameras anzustreben, welche nicht nur zur Hinderniserkennung, sondern auch zur Wegfindung genutzt werden können.
+                              </div>
+                            </section>
+                            <section id="code-section" class="doc-section">
+                              <h2 class="section-title">Quellcode</h2>
+                              <div class="section-block">
+                                Der Quellcode wurde über git verwaltet und auf github gehostet. Er kann hier eingesehen und heruntergeladen werden:<br/>
+								<a href="https://github.com/andrejev/GPSCar"> GPS-Car 2016</a><br/><br/>
+                                Webseiten der vorherigen GPS-Car Projekte: <br/>
+                                <a href="http://joanna.iwr.uni-heidelberg.de/projects/2014WS_GPS_A/index.html">GPS on Wheels - A</a><br/>
+                                <a href="http://joanna.iwr.uni-heidelberg.de/projects/2014WS_GPS_B/index.html">GPS on Wheels - B</a>
+                              </div>
+                            </section>
+                            <section id="medien-section" class="doc-section">
+                              <h2 class="section-title">Medien</h2>
+                              <div class="section-block">
+                                <table>
+									<tr>
+										<td><a href="assets/img/schaltplanGPS.jpg" data-toggle="lightbox" data-gallery="medien" data-title="Schaltplan" target="_blank"><img style="width:35%" src="assets/img/schaltplanGPS.jpg"></a></td>
+										<td><b>Schaltplan:</b> Die Kontakte zum Anschluss des GPS Modul sind durch ein Breakout Board von den GPIO Pins des Raspberrys abgeleitet. Zu beachten ist, dass die Kontakte TX und RX des Moduls über Kreuz angeschlossen werden müssen.</td>
+									</tr>
+									
+									<tr class="separator" />
+									
+									<tr>
+										<td><a href="assets/media/presentation.pdf" target="_blank"><img style="width:35%" src="assets/img/presentation.png"></a></td>
+										<td><b>Präsentation:</b> Die Abschlusspräsentation, welche am 23.09.2016 gehalten wurde.</td>
+									</tr>
+								</table>
+								
+                              </div>
+                            </section>
+                        </div><!--//content-inner-->
+                    </div><!--//doc-content-->
+                    <div class="doc-sidebar hidden-xs">
+                        <nav id="doc-nav">
+                            <ul id="doc-menu" class="nav doc-menu" data-spy="affix">
+                                <li><a class="scrollto" href="#general-section">Allgemeine Informationen</a></li>
+                                <li><a class="scrollto" href="#ergebnis-section">Ergebnis</a></li>
+                                <li><a class="scrollto" href="#verlauf-section">Projektverlauf</a></li>
+                                <li><a class="scrollto" href="#inbetriebnahme-section">Inbetriebnahme</a></li>
+                                <li><a class="scrollto" href="#probleme-section">Aufgetretene Probleme</a></li>
+                                <li><a class="scrollto" href="#ausblick-section">Ausblick</a></li>
+                                <li><a class="scrollto" href="#code-section">Quellcode</a></li>
+                                <li><a class="scrollto" href="#medien-section">Medien</a></li>
+                            </ul><!--//doc-menu-->
+                        </nav>
+                    </div><!--//doc-sidebar-->
+                </div><!--//doc-body-->
+            </div><!--//container-->
+        </div><!--//doc-wrapper-->
+
+
+    </div><!--//page-wrapper-->
+
+    <!-- Main Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+	<script type="text/javascript" src="assets/plugins/lightbox/dist/ekko-lightbox.js"></script>
+
+
+</body>
+</html>
